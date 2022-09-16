@@ -6,6 +6,8 @@ import numpy as np
 st.title('Penguins Specie Prediction')
 
 st.markdown('''
+            
+            ![image of penguins](images/download.jpg)
 Predicting the Species of $Penguins$ Using the penguins dataset
 
 
