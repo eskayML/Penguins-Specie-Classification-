@@ -25,7 +25,7 @@ island = st.selectbox('Island', ('Torgersen', 'Biscoe', 'Dream'))
 bill_length_mm = st.slider('Bill Length (mm) ', 30, 60)
 bill_depth_mm = st.slider('Bill Depth (mm) ', 13, 22)
 flipper_length_mm = st.slider('Flipper Length (mm) ', 160, 240)
-body_mass_g = st.slider('Body Mass (g) ', 2500, 6500)
+body_mass_g = st.slider('Body Mass (g) ', 2500, 6500,step = 10)
 sex = st.radio('Sex', ('Male', 'Female'))
 
 predict_button = st.button('Predict')
