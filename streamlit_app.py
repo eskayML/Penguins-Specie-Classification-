@@ -4,10 +4,9 @@ import pandas as pd
 import numpy as np
 
 st.title('Penguins Specie Prediction')
-
+st.image('images/download.jpg',caption  = 'Penguins image')
 st.markdown('''
             
-            ![image of penguins](images/download.jpg)
 Predicting the Species of $Penguins$ Using the penguins dataset
 
 
