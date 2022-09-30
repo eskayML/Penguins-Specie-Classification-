@@ -3,6 +3,8 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 
+# print(joblib.__version__)
+
 st.title('Penguins Specie Prediction')
 st.image('images/download.jpg',caption  = 'Penguins image')
 st.markdown('''
@@ -19,7 +21,7 @@ Predicting the Species of $Penguins$ Using the penguins dataset
 feature_names = ['island', 'bill_length_mm', 'bill_depth_mm', 'flipper_length_mm',
                          'body_mass_g', 'sex']
 
-model = joblib.load('pipeline.pkl')
+model = joblib.load(open('pipeline.pkl', 'rb'))
 
 island = st.selectbox('Island', ('Torgersen', 'Biscoe', 'Dream'))
 bill_length_mm = st.slider('Bill Length (mm) ', 30, 60)
