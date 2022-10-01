@@ -21,7 +21,7 @@ Predicting the Species of $Penguins$ Using the penguins dataset
 feature_names = ['island', 'bill_length_mm', 'bill_depth_mm', 'flipper_length_mm',
                          'body_mass_g', 'sex']
 
-model = joblib.load(open('pipeline.pkl', 'rb'))
+model = joblib.load('pipeline.pkl')
 
 island = st.selectbox('Island', ('Torgersen', 'Biscoe', 'Dream'))
 bill_length_mm = st.slider('Bill Length (mm) ', 30, 60)
